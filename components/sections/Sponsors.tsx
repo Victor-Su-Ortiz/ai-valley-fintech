@@ -11,24 +11,10 @@ import { cn } from "@/lib/utils"
 
 // Placeholder sponsors - replace with actual sponsors
 const mockSponsors = {
-  platinum: [
-    { name: "TechCorp", logo: "🏢" },
-  ],
-  gold: [
-    { name: "FinanceAPI", logo: "💳" },
-    { name: "CloudProvider", logo: "☁️" },
-  ],
-  silver: [
-    { name: "DataCo", logo: "📊" },
-    { name: "SecurityFirm", logo: "🔒" },
-    { name: "DevTools", logo: "🛠️" },
-  ],
-  bronze: [
-    { name: "StartupA", logo: "🚀" },
-    { name: "StartupB", logo: "💡" },
-    { name: "StartupC", logo: "⚡" },
-    { name: "StartupD", logo: "🎯" },
-  ],
+  platinum: [],
+  gold: [],
+  silver: [],
+  bronze: [],
 }
 
 const tierSizes = {
@@ -73,6 +59,37 @@ export function Sponsors() {
 
         {/* Sponsor Tiers */}
         <div className="space-y-12">
+          {/* TBA Message */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="text-center"
+          >
+            <Card className="gradient-border max-w-3xl mx-auto">
+              <CardContent className="p-12">
+                <h3 className="text-3xl font-bold mb-4 text-gradient">
+                  Sponsors To Be Announced
+                </h3>
+                <p className="text-lg text-gray-300 mb-6">
+                  We're finalizing partnerships with industry-leading companies. 
+                  Check back soon for our amazing sponsor lineup!
+                </p>
+                <div className="flex flex-wrap justify-center gap-4 mb-8">
+                  {Object.entries(sponsorTiers).map(([tierKey, tier]) => (
+                    <div key={tierKey} className={`px-4 py-2 rounded-full bg-gradient-to-r ${tier.color} bg-opacity-20`}>
+                      <span className="text-sm font-semibold text-white uppercase tracking-wider">
+                        {tier.name}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          </motion.div>
+
+          {/* Actual Sponsors Display (Hidden when empty) */}
           {Object.entries(sponsorTiers).map(([tierKey, tier]) => {
             const sponsors = mockSponsors[tierKey as keyof typeof mockSponsors]
             if (sponsors.length === 0) return null

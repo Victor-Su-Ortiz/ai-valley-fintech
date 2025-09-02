@@ -195,7 +195,7 @@ export const schedule = {
     { time: "11:45 AM", event: "Note from organizers", type: "logistics" },
     { time: "12:00 PM", event: "Lunch", type: "meal" },
     { time: "3:14 PM", event: "Git push deadline", type: "milestone" },
-    { time: "3:45 PM", event: "Hackfair (everyone can demo)", type: "milestone" },
+    { time: "3:45 PM", event: "Devpost submission evaluation", type: "milestone" },
     { time: "5:30 PM", event: "Final Demos", type: "ceremony" },
     { time: "6:30 PM", event: "Awards & Closing Ceremony", type: "ceremony" },
   ],
