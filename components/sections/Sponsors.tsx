@@ -9,8 +9,14 @@ import { Button } from "@/components/ui/button"
 import { sponsorTiers, siteConfig } from "@/lib/constants"
 import { cn } from "@/lib/utils"
 
+// Type definition for sponsors
+interface Sponsor {
+  name: string
+  logo: string
+}
+
 // Placeholder sponsors - replace with actual sponsors
-const mockSponsors = {
+const mockSponsors: Record<string, Sponsor[]> = {
   platinum: [],
   gold: [],
   silver: [],
