@@ -2,6 +2,7 @@
 
 import * as React from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { Menu, X } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 
@@ -50,9 +51,16 @@ export function Navbar() {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
-              className="text-xl font-bold text-gradient"
+              className="flex items-center space-x-3"
             >
-              MoneyHacks
+              <Image
+                src="/ai-valley-logo.png"
+                alt="AI Valley"
+                width={40}
+                height={40}
+                className="object-contain"
+              />
+              <span className="text-xl font-bold text-gradient">MoneyHacks</span>
             </motion.div>
           </Link>
 

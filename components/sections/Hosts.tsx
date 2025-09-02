@@ -4,6 +4,7 @@ import * as React from "react"
 import { motion } from "framer-motion"
 import { ExternalLink, Users, Calendar, Award, Globe } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -12,7 +13,8 @@ import { siteConfig } from "@/lib/constants"
 const hostData = [
   {
     name: "AI Valley",
-    logo: "🏔️",
+    logo: "/ai-valley-logo.png",
+    isImage: true,
     description: "AI Valley is a community-driven organization built on the belief that environment is everything. Started as Bay Area hackathons, now a global movement across disciplines. We provide the right space, people, and opportunities for ambitious individuals to grow, build, and thrive. From tech to arts and entrepreneurship, we nurture every niche and create connections that multiply potential.",
     website: siteConfig.links.aiValley,
     stats: [
@@ -26,6 +28,7 @@ const hostData = [
   {
     name: "AI Collective Stanford",
     logo: "🎓",
+    isImage: false,
     description: "The Stanford chapter of AI Collective brings together students, researchers, and industry professionals to explore the frontiers of artificial intelligence. We foster innovation through academic excellence and real-world application.",
     website: "#",
     stats: [
@@ -79,8 +82,18 @@ export function Hosts() {
                 <CardContent className="p-8">
                   {/* Logo and Name */}
                   <div className="flex items-center space-x-4 mb-6">
-                    <div className={`text-6xl p-4 rounded-2xl bg-gradient-to-br ${host.bgGradient} border border-white/10`}>
-                      {host.logo}
+                    <div className={`p-4 rounded-2xl bg-gradient-to-br ${host.bgGradient} border border-white/10`}>
+                      {host.isImage ? (
+                        <Image
+                          src={host.logo}
+                          alt={`${host.name} logo`}
+                          width={80}
+                          height={80}
+                          className="object-contain"
+                        />
+                      ) : (
+                        <span className="text-6xl">{host.logo}</span>
+                      )}
                     </div>
                     <div>
                       <h3 className="text-2xl font-bold text-white">{host.name}</h3>

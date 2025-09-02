@@ -1,0 +1,11 @@
+<svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- AI Valley Logo Placeholder -->
+  <!-- Replace this with the actual AI Valley logo SVG or use the PNG version -->
+  <rect width="800" height="800" fill="#f0f0f0" rx="20"/>
+  <text x="400" y="400" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="#0066FF">
+    AI VALLEY
+  </text>
+  <text x="400" y="450" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#666">
+    Logo
+  </text>
+</svg>
