@@ -51,14 +51,14 @@
 
 @layer base {
   * {
-    border-color: hsl(var(--border));
+    @apply border-border;
   }
   body {
     @apply bg-background text-foreground;
     background: linear-gradient(
       to bottom,
-      #0A0E27,
-      #141A3B
+      theme("colors.fintech.navy"),
+      theme("colors.fintech.navyLight")
     );
     min-height: 100vh;
   }
@@ -74,8 +74,8 @@
   /* Gradient border effect */
   .gradient-border {
     @apply relative;
-    background: linear-gradient(#1A1F3A, #1A1F3A) padding-box,
-              linear-gradient(135deg, #0066FF, #00D4AA) border-box;
+    background: linear-gradient(theme("colors.fintech.surface"), theme("colors.fintech.surface")) padding-box,
+              linear-gradient(135deg, theme("colors.primary.500"), theme("colors.secondary.500")) border-box;
     border: 2px solid transparent;
   }
 
@@ -102,19 +102,16 @@
 
   /* Text gradient effect */
   .text-gradient {
-    @apply bg-clip-text text-transparent;
-    background: linear-gradient(to right, #0066FF, #00D4AA);
-    background-clip: text;
-    -webkit-background-clip: text;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-secondary-500;
   }
 
   /* Animated gradient background */
   .animated-gradient {
     background: linear-gradient(
       135deg,
-      #0066FF,
-      #00D4AA,
-      #FFD700
+      theme("colors.primary.500"),
+      theme("colors.secondary.500"),
+      theme("colors.accent.gold")
     );
     background-size: 200% 200%;
     animation: gradient 3s ease infinite;
@@ -127,8 +124,7 @@
 
   /* Skeleton loader */
   .skeleton {
-    @apply animate-pulse rounded;
-    background: linear-gradient(to right, #1A1F3A, #242B4E);
+    @apply animate-pulse bg-gradient-to-r from-fintech-surface to-fintech-surfaceLight rounded;
   }
 
   /* Hover card lift effect */
@@ -148,9 +144,7 @@
 
   /* Focus styles */
   .focus-ring {
-    @apply focus:outline-none focus:ring-2 focus:ring-offset-2;
-    --tw-ring-color: #0066FF;
-    --tw-ring-offset-color: #0A0E27;
+    @apply focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-fintech-navy;
   }
 }
 
@@ -188,10 +182,10 @@
   .gradient-text-animate {
     background: linear-gradient(
       90deg,
-      #0066FF,
-      #00D4AA,
-      #FFD700,
-      #0066FF
+      theme("colors.primary.500"),
+      theme("colors.secondary.500"),
+      theme("colors.accent.gold"),
+      theme("colors.primary.500")
     );
     background-size: 200% auto;
     background-clip: text;
@@ -218,10 +212,10 @@
   /* Mesh gradient overlay */
   .mesh-gradient {
     background-image: 
-      radial-gradient(at 40% 20%, rgba(0, 102, 255, 0.2) 0px, transparent 50%),
-      radial-gradient(at 80% 0%, rgba(0, 212, 170, 0.2) 0px, transparent 50%),
-      radial-gradient(at 0% 50%, rgba(255, 215, 0, 0.1) 0px, transparent 50%),
-      radial-gradient(at 80% 50%, rgba(0, 102, 255, 0.1) 0px, transparent 50%),
-      radial-gradient(at 0% 100%, rgba(0, 212, 170, 0.1) 0px, transparent 50%);
+      radial-gradient(at 40% 20%, theme("colors.primary.500/20") 0px, transparent 50%),
+      radial-gradient(at 80% 0%, theme("colors.secondary.500/20") 0px, transparent 50%),
+      radial-gradient(at 0% 50%, theme("colors.accent.gold/10") 0px, transparent 50%),
+      radial-gradient(at 80% 50%, theme("colors.primary.500/10") 0px, transparent 50%),
+      radial-gradient(at 0% 100%, theme("colors.secondary.500/10") 0px, transparent 50%);
   }
 }

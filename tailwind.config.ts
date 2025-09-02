@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss"
+const { fontFamily } = require("tailwindcss/defaultTheme")
 
-export default {
+const config = {
   darkMode: ["class"],
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -31,7 +32,7 @@ export default {
           200: "#80B3FF",
           300: "#4D94FF",
           400: "#1A75FF",
-          500: "#0066FF", // Electric blue
+          500: "#0066FF",
           600: "#0052CC",
           700: "#003D99",
           800: "#002966",
@@ -45,7 +46,7 @@ export default {
           200: "#80FFE1",
           300: "#4DFFD5",
           400: "#1AFFC9",
-          500: "#00D4AA", // Mint green
+          500: "#00D4AA",
           600: "#00AA88",
           700: "#008066",
           800: "#005544",
@@ -92,27 +93,8 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        sans: [
-          "var(--font-inter)",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif",
-          "Apple Color Emoji",
-          "Segoe UI Emoji",
-          "Segoe UI Symbol",
-          "Noto Color Emoji"
-        ],
-        mono: [
-          "var(--font-jetbrains)",
-          "ui-monospace",
-          "SFMono-Regular",
-          "Menlo",
-          "Monaco",
-          "Consolas",
-          "Liberation Mono",
-          "Courier New",
-          "monospace"
-        ],
+        sans: ["var(--font-inter)", ...fontFamily.sans],
+        mono: ["var(--font-jetbrains)", ...fontFamily.mono],
       },
       keyframes: {
         "accordion-down": {
@@ -193,3 +175,5 @@ export default {
   },
   plugins: [require("tailwindcss-animate")],
 } satisfies Config
+
+export default config
