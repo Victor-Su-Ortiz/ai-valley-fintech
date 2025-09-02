@@ -105,14 +105,14 @@ export function About() {
               </p>
               <p className="text-lg leading-relaxed">
                 Organized by <span className="text-secondary-400 font-semibold">AI Valley</span> and{" "}
-                <span className="text-secondary-400 font-semibold">AI Collective Stanford Chapter</span>, this event 
-                brings together the brightest minds in tech and finance to build innovative solutions that will shape 
-                how we interact with money.
+                <span className="text-secondary-400 font-semibold">AI Collective Stanford Chapter</span>, MoneyHacks 
+                embodies the belief that <span className="text-primary-400 font-semibold">environment is everything</span>. 
+                We're creating the right space for ambitious builders to grow, connect, and thrive.
               </p>
               <p className="text-lg leading-relaxed">
-                Whether you're passionate about payments, investing, Web3, or have a wildcard idea, MoneyHacks provides 
-                the perfect environment to turn your vision into reality. With world-class mentors, cutting-edge APIs, 
-                and a community of driven builders, you'll have everything you need to create something extraordinary.
+                Whether you're passionate about payments, investing, Web3, or have a wildcard idea, MoneyHacks nurtures 
+                every niche in fintech. With curated connections to mentors, equal access to resources, and a community 
+                built on collaboration over competition, you'll multiply your potential and create something extraordinary.
               </p>
               <div className="pt-4 border-t border-white/10">
                 <p className="text-2xl font-bold text-center">

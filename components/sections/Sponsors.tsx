@@ -142,8 +142,9 @@ export function Sponsors() {
                 <span className="text-gradient">Become a Sponsor</span>
               </h3>
               <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-                Join us in shaping the future of fintech. Sponsor MoneyHacks and connect with 200+ talented builders,
-                showcase your brand, and discover the next generation of innovation.
+                Partner with MoneyHacks to connect with the next generation of fintech innovators. 
+                Gain direct access to 200+ ambitious builders, position your brand as a leader in AI + fintech, 
+                and fuel the ecosystem while supporting rising leaders.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Button
@@ -164,11 +165,11 @@ export function Sponsors() {
               <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
                 {[
                   "Brand Visibility",
-                  "Talent Pipeline",
-                  "Innovation Access",
-                  "Workshop Opportunities",
-                  "Judging Panel Seat",
-                  "Exclusive Networking",
+                  "Talent Pipeline", 
+                  "Innovation Partnership",
+                  "Community Impact",
+                  "Thought Leadership",
+                  "Network Growth",
                 ].map((benefit, index) => (
                   <motion.div
                     key={benefit}

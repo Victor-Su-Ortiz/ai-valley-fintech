@@ -11,7 +11,7 @@ export const siteConfig = {
     email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "community@aivalley.io",
   },
   event: {
-    date: "October 18-19, 2024",
+    date: "August 2-3, 2025",
     location: "House of Web3",
     duration: "36-48 hours",
   }
@@ -180,26 +180,24 @@ export const stats = [
 
 // Schedule data
 export const schedule = {
-  "October 18": [
-    { time: "5:00 PM", event: "Check-in & Registration", type: "logistics" },
-    { time: "6:00 PM", event: "Opening Ceremony", type: "ceremony" },
-    { time: "6:30 PM", event: "Dinner & Team Formation", type: "meal" },
-    { time: "7:30 PM", event: "Hacking Begins!", type: "milestone" },
-    { time: "8:00 PM", event: "API Workshop: Stripe & Plaid", type: "workshop" },
-    { time: "9:00 PM", event: "Web3 Development Workshop", type: "workshop" },
-    { time: "10:00 PM", event: "Late Night Snacks", type: "meal" },
-  ],
-  "October 19": [
-    { time: "12:00 AM", event: "Midnight Pizza", type: "meal" },
-    { time: "8:00 AM", event: "Breakfast", type: "meal" },
-    { time: "10:00 AM", event: "AI/ML in Fintech Workshop", type: "workshop" },
+  "August 2": [
+    { time: "8:30 AM", event: "Networking + Breakfast", type: "meal" },
+    { time: "10:00 AM", event: "Opening Speeches", type: "ceremony" },
+    { time: "10:30 AM", event: "HACK TIME", type: "milestone" },
     { time: "12:00 PM", event: "Lunch", type: "meal" },
-    { time: "2:00 PM", event: "Pitch Workshop", type: "workshop" },
-    { time: "4:00 PM", event: "Project Submission Deadline", type: "milestone" },
-    { time: "4:30 PM", event: "Demo Fair & Judging", type: "milestone" },
+    { time: "1:00 PM", event: "Workshops / Speakers", type: "workshop" },
     { time: "6:00 PM", event: "Dinner", type: "meal" },
-    { time: "7:00 PM", event: "Final Presentations", type: "ceremony" },
-    { time: "8:30 PM", event: "Awards Ceremony", type: "ceremony" },
+    { time: "7:00 PM", event: "Continue hacking", type: "milestone" },
+  ],
+  "August 3": [
+    { time: "9:00 AM", event: "Breakfast", type: "meal" },
+    { time: "9:00 AM", event: "Keep pushing", type: "milestone" },
+    { time: "11:45 AM", event: "Note from organizers", type: "logistics" },
+    { time: "12:00 PM", event: "Lunch", type: "meal" },
+    { time: "3:14 PM", event: "Git push deadline", type: "milestone" },
+    { time: "3:45 PM", event: "Hackfair (everyone can demo)", type: "milestone" },
+    { time: "5:30 PM", event: "Final Demos", type: "ceremony" },
+    { time: "6:30 PM", event: "Awards & Closing Ceremony", type: "ceremony" },
   ],
 }
 

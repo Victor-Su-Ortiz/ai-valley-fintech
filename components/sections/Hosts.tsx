@@ -13,12 +13,12 @@ const hostData = [
   {
     name: "AI Valley",
     logo: "🏔️",
-    description: "AI Valley is a thriving community of builders, innovators, and entrepreneurs pushing the boundaries of artificial intelligence and technology. We bring together the brightest minds to create the future through hackathons, workshops, and collaborative projects.",
+    description: "AI Valley is a community-driven organization built on the belief that environment is everything. Started as Bay Area hackathons, now a global movement across disciplines. We provide the right space, people, and opportunities for ambitious individuals to grow, build, and thrive. From tech to arts and entrepreneurship, we nurture every niche and create connections that multiply potential.",
     website: siteConfig.links.aiValley,
     stats: [
-      { icon: Users, label: "Community Members", value: "5,000+" },
-      { icon: Calendar, label: "Events Hosted", value: "50+" },
-      { icon: Award, label: "Projects Launched", value: "200+" },
+      { icon: Users, label: "Community Members", value: "1,000+" },
+      { icon: Calendar, label: "Events Hosted", value: "12+" },
+      { icon: Award, label: "Prizes Awarded", value: "$50K+" },
     ],
     gradient: "from-primary-500 to-cyan-500",
     bgGradient: "from-primary-500/10 to-cyan-500/10",
@@ -136,20 +136,20 @@ export function Hosts() {
                 <span className="text-gradient">Why This Partnership Matters</span>
               </h3>
               <p className="text-gray-300 leading-relaxed mb-6">
-                By combining AI Valley's entrepreneurial ecosystem with Stanford's academic excellence,
-                MoneyHacks creates a unique environment where theoretical knowledge meets practical application.
-                This collaboration ensures participants have access to cutting-edge research, industry connections,
-                and the resources needed to build transformative fintech solutions.
+                By combining AI Valley's belief that "environment is everything" with Stanford's academic excellence,
+                MoneyHacks creates the perfect space for ambitious builders to thrive. This partnership embodies our core principles:
+                equal access to opportunity, nurturing every niche, and creating connections that multiply potential.
+                Together, we're building more than a hackathon — we're fostering a movement where collaboration creates brilliance.
               </p>
               <div className="flex flex-wrap justify-center gap-4">
                 <div className="flex items-center space-x-2 px-4 py-2 rounded-full bg-primary-500/10 border border-primary-500/30">
-                  <span className="text-sm text-primary-300">Industry Network</span>
+                  <span className="text-sm text-primary-300">Environment is Everything</span>
                 </div>
                 <div className="flex items-center space-x-2 px-4 py-2 rounded-full bg-secondary-500/10 border border-secondary-500/30">
-                  <span className="text-sm text-secondary-300">Academic Excellence</span>
+                  <span className="text-sm text-secondary-300">Equal Access</span>
                 </div>
                 <div className="flex items-center space-x-2 px-4 py-2 rounded-full bg-accent-gold/10 border border-accent-gold/30">
-                  <span className="text-sm text-accent-gold">Innovation Focus</span>
+                  <span className="text-sm text-accent-gold">Connections Create Brilliance</span>
                 </div>
               </div>
             </CardContent>

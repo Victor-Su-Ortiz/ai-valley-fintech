@@ -26,7 +26,7 @@ const eventTypeColors = {
 }
 
 export function Schedule() {
-  const [selectedDay, setSelectedDay] = React.useState("October 18")
+  const [selectedDay, setSelectedDay] = React.useState("August 2")
   const days = Object.keys(schedule)
 
   return (
