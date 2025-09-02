@@ -11,7 +11,7 @@ export const siteConfig = {
     email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "community@aivalley.io",
   },
   event: {
-    date: "August 2-3, 2025",
+    date: "October 18-19, 2025",
     location: "House of Web3",
     duration: "36-48 hours",
   }
@@ -180,7 +180,7 @@ export const stats = [
 
 // Schedule data
 export const schedule = {
-  "August 2": [
+  "October 18": [
     { time: "8:30 AM", event: "Networking + Breakfast", type: "meal" },
     { time: "10:00 AM", event: "Opening Speeches", type: "ceremony" },
     { time: "10:30 AM", event: "HACK TIME", type: "milestone" },
@@ -189,7 +189,7 @@ export const schedule = {
     { time: "6:00 PM", event: "Dinner", type: "meal" },
     { time: "7:00 PM", event: "Continue hacking", type: "milestone" },
   ],
-  "August 3": [
+  "October 19": [
     { time: "9:00 AM", event: "Breakfast", type: "meal" },
     { time: "9:00 AM", event: "Keep pushing", type: "milestone" },
     { time: "11:45 AM", event: "Note from organizers", type: "logistics" },
